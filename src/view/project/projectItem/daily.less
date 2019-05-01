@@ -1,0 +1,229 @@
+.daily {
+  min-width: 1055px;
+  width: 57%;
+  margin: 75px 24px 0;
+  .attendance-style {
+    .attendance-style-li {
+      color: #666666;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 5px 11px;
+      line-height: 14px;
+      transition: .4s;
+      -webkit-transition: .4s;
+      background: #eeeeee;
+    }
+    .attendance-style-li1 {
+      border-radius: 2px 0 0 2px;
+    }
+    .attendance-style-li2 {
+      border-radius: 0 2px 2px 0;
+    }
+    .attendance-style-active, .attendance-style-li:hover {
+      color: #ffffff;
+      background: #418bfa;
+    }
+  }
+
+  .attendance-list {
+    margin-top: 30px;
+    .attendance-li {
+      margin-bottom: 25px;
+      width: 500px;
+    }
+    .attendance-leave-li {
+      width: 500px;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+    .attendance-li-left {
+      width: 32px;
+      height: 32px;
+      .user-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .attendance-li-right {
+      width: calc(100% - 36px);
+      margin-left: 4px;
+      .user-name {
+        color: #222222;
+        font-size: 12px;
+        line-height: 12px;
+        .user-date {
+          color: #aaaaaa;
+          margin-left: 4px;
+        }
+      }
+      .attendance-info {
+        margin: 8px 0 0 14px;
+        background: linear-gradient(0deg, #97d0f1 0%, #c1e3f8 100%);
+        box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #6cb4e0;
+        border-radius: 8px;
+        width: calc(100% - 30px);
+        padding: 15px;
+        position: relative;
+      }
+      .attendance-info2 {
+        position: relative;
+        background: #ffffff;
+        box-shadow: 1.4px 1.4px 7.7px 0.3px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        border: none;
+        .attendance-leave-li-row {
+          margin-bottom: 8px;
+        }
+        .attendance-leave-li-l {
+          font-size: 16px;
+          line-height: 20px;
+          width: 70px;
+          text-align: right;
+          color: #999999;
+        }
+        .attendance-leave-li-r {
+          width: calc(100% - 80px);
+          color: #333333;
+          margin-left: 10px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .attendance-leave-li-r2 {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+        .attendance-leave-li-btn {
+          color: #4898fa;
+        }
+        .attendance-leave-status {
+          width: 85px;
+          position: absolute;
+          right: 4%;
+          top: 4%;
+        }
+      }
+      .der-header, .der-last, .der-bottom, .der-top {
+        position: absolute;
+      }
+      .der-header {
+        right: -10px;
+        top: -6px;
+        width: 23px;
+      }
+      .attendance-info-text {
+        color: #222222;
+        font-size: 16px;
+        text-align: left;
+      }
+      .der-last {
+        left: -10px;
+        width: 10px;
+        top: 10px;
+      }
+      /*.der-top{*/
+      /*width: 100%;*/
+      /*top: 1px;*/
+      /*left: 0;*/
+      /*}*/
+      .der-bottom {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .attendance-liattendance-li1 {
+      .attendance-li-right {
+        .user-date {
+          margin: 0 4px 0 4px;
+        }
+        .der-last {
+          right: -10px;
+          width: 10px;
+          top: 10px;
+          left: inherit;
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+        }
+        .der-header {
+          left: -10px;
+          top: -6px;
+          width: 23px;
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+
+  .project-footer {
+    height: 80px;
+    position: relative;
+    .attendance-last {
+      position: absolute;
+      left: 203px;
+      bottom: 30px;
+      div {
+        display: inline-block;
+        padding: 6px 14px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        background: rgba(0, 0, 0, .1);
+        border-radius: 12px;
+      }
+    }
+    .project-active {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      right: 0;
+      /*background: #fff;*/
+      /*width: 92%;*/
+
+      .project-active-li {
+        margin-right: 20px;
+        cursor: pointer;
+        text-align: center;
+        .project-active-li-t {
+          text-align: center;
+          .project-active-li-t-bg {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(-90deg, #dab972 0%, #e7ce98 100%);
+            box-shadow: 0px 2px 4px 2px rgba(65, 139, 250, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            .project-active-li-img {
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              width: 24px;
+              margin-top: 10px;
+            }
+          }
+          .project-active-li-t-bg1 {
+            background: linear-gradient(-90deg, #418bfa 0%, #56d3fc 100%);
+          }
+          .project-active-li-t-bg2 {
+            background: linear-gradient(-90deg, #0ba194 0%, #2bcabc 100%);
+          }
+        }
+        .project-active-li-b {
+          color: #222222;
+          font-size: 11px;
+          line-height: 11px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .attendance-leave-li-footer{
+    cursor: pointer;
+  }
+}

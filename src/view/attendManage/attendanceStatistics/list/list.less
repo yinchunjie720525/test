@@ -1,0 +1,742 @@
+.attendanceStatistics {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  //考勤统计列表样式
+  .statistics-list {
+    width: 239px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e4e4e4;
+    .statistics-list-ul {
+      .statistics-list-ul-li {
+        font-size: 14px;
+        color: #222222;
+        height: 36px;
+        line-height: 36px;
+        text-align: left;
+        padding-left: 55px;
+        cursor: pointer;
+      }
+      .statistics-list-ul-li:hover{
+        color: #fff;
+        background-color: #56b1fc;
+      }
+      .active {
+        color: #fff;
+        background-color: #56b1fc;
+      }
+    }
+  }
+  .monthlySummary, .dailyStats, .clockTime, .originalRecord {
+    width: 100%;
+    height: 100%;
+    .showColumns, .showColumns1 {
+      overflow: auto;
+      height: 100%;
+    }
+    //月度汇总样式
+    .showColumns {
+      max-width: 1400px;
+      overflow: auto;
+      margin-right: 12px;
+      .show-width {
+        min-width: 1200px;
+        .showColumns-top {
+          margin-top: 24px;
+          .attend {
+            .attend-title {
+              float: left;
+              width: 80px;
+              text-align: right;
+              font-size: 14px;
+              color: #222222;
+              border-bottom: none;
+              line-height: 22px;
+            }
+            .attend-content {
+              float: left;
+              text-align: left;
+              margin-left: 10px;
+              width: calc(100% - 90px);
+              .attend-content-checkbox {
+                font-size: 14px;
+                color: #222222;
+                margin-right: 16px;
+                .lizhi{
+                  padding-left: 6px;
+                  line-height: 20px;
+                }
+              }
+              .attend-content-checkbox1-a {
+                font-size: 12px;
+                color: #999999;
+              }
+            }
+          }
+        }
+      }
+      .attend-select {
+        width: 100%;
+        .attend-title1 {
+          float: left;
+          width: 80px;
+          text-align: right;
+          font-size: 14px;
+          color: #222222;
+          border-bottom: none;
+          line-height: 34px;
+          margin-top: 24px;
+        }
+        .attend-div1{
+          width: 60%;
+          .attend-content-select {
+            font-size: 14px;
+            color: #222222;
+            margin-top: 24px;
+            padding-left: 24px;
+          }
+          .attend-content-checkbox{
+            margin-left: 16px;
+            .lizhi{
+              padding-left: 6px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .line {
+        margin: 24px 0 24px 24px;
+        height: 1px;
+        text-align: left;
+        background-color: #ededed;
+      }
+      .monthlySummary{
+        min-width: 1200px;
+        width: calc(100% - 48px);
+        overflow: auto;
+        margin: 0 24px;
+      .but {
+        width: 80px;
+        height: 32px;
+        background-image: linear-gradient(0deg, #418bfa 0%, #56b1fc 100%);
+        border-radius: 4px;
+        font-size: 16px;
+        color: #ffffff;
+        border: none;
+        margin: 0 0 11px 0;
+      }
+      //考勤统计月度汇总表格样式
+      .attend-content-table {
+        margin-right: 24px;
+        width: 120%;
+        .attend-content-midder {
+          border: 1px solid rgb(238,238,238);
+          .attend-content-table-tr {
+            text-align: center;
+            color: #222;
+            font-size: 12px;
+            background-color: rgb(246,246,246);
+            .attend-content-table-th {
+              padding: 10px 5px;
+              width: 100px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .attend-content-table-th1 {
+              width: 160px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .attend-content-table-th2 {
+              width: 110px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .attend-content-table-th3 {
+              width: 75px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .attend-content-table-th4 {
+              width: 135px;
+              border: 1px solid rgb(238,238,238);
+              .th-top {
+                width: 135px;
+                height: 31px;
+                line-height: 32px;
+                border: 1px solid rgb(238,238,238);
+              }
+              .th-bottom {
+                height: 45px;
+                .th-bottom1 {
+                  height: 45px;
+                  line-height: 45px;
+                  width: 68px;
+                  float: left;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .th-bottom2 {
+                  line-height: 45px;
+                  width: 65px;
+                  float: right;
+                }
+              }
+            }
+          }
+          .attend-content-table-tr1 {
+            text-align: center;
+            .attend-content-table-tr1-td {
+              border: 1px solid rgb(238,238,238);
+              padding: 10px 5px;
+            }
+          }
+          .attend-content-table-tr1:hover {
+            background-color: rgb(239,249,255);
+            cursor: pointer;
+          }
+        }
+      }
+      }
+      .monthlySummary::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 6px !important;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 10px !important;
+        margin: 0 24px !important;
+      }
+      .monthlySummary::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px !important;
+        background: rgb(229,229,229) !important;
+      }
+      .tabs {
+        width: calc(100% - 288px);
+        height: 30px;
+        float: right;
+        margin: 24px 24px 0 0;
+        text-align: right;
+        .but1, .but2, .but3 {
+          width: 28px;
+          height: 28px;
+          background-color: #ffffff;
+          border: none;
+          margin-left: 1px;
+        }
+        .but2 {
+          background-color: #4898fa;
+          border: solid 1px #4898fa;
+          font-size: 14px;
+          color: #ffffff;
+          border-radius: 4px;
+        }
+        .butImg {
+          height: 12px;
+          margin-top: -3px;
+        }
+      }
+    }
+    //考勤统计每日统计样式
+    .showColumns1 {
+      text-align: left;
+      padding: 24px;
+      margin-right: 12px;
+      .show-width{
+        min-width: 1200px;
+        .showColumns-top{
+        .attend1 {
+          .attend-title {
+            float: left;
+            width: 80px;
+            height: 40px;
+            text-align: right;
+            margin-left: 2px;
+            font-size: 14px;
+            color: #222222;
+            line-height: 34px;
+          }
+          .attend-content-checkbox2 {
+            font-size: 14px;
+            color: #222222;
+            margin-top: 6px;
+            .lizhi{
+              padding-left: 6px;
+              line-height: 20px;
+            }
+            .attend-content-checkbox-img1 {
+              height: 14px;
+            }
+            .attend-content-checkbox-img2 {
+              width: 36px;
+              background-color: red;
+              color: #fff;
+              font-size: 12px;
+              border: none;
+              margin: 3px;
+              border-radius: 4px;
+              padding: 0 3px;
+            }
+          }
+          .lizhi{
+            padding-left: 6px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+        .attend-select {
+          padding: 12px;
+          .attend-title1 {
+            float: left;
+            width: 70px;
+            text-align: right;
+            font-size: 14px;
+            color: #222222;
+            border-bottom: none;
+            line-height: 34px;
+          }
+          .attend-content-select {
+            font-size: 14px;
+            color: #222222;
+            padding-left: 24px;
+            .attend-content-checkbox{
+              margin-left: 24px;
+              .lizhi{
+              padding-left: 6px;
+              line-height: 30px;
+            }
+            }
+          }
+        }
+        .line1 {
+          margin: 24px 0;
+          height: 1px;
+          background-color: #ededed;
+        }
+      .showColumns-body{
+          min-width: 1200px;
+        .but1 {
+          width: 105px;
+          height: 32px;
+          background-image: linear-gradient(0deg, #418bfa 0%, #56b1fc 100%);
+          border-radius: 4px;
+          font-size: 16px;
+          color: #ffffff;
+          border: none;
+          margin-bottom: 11px;
+    }
+      //每日统计表样式
+      .dailyStats-content-table {
+        margin-right: 24px;
+        width: 100%;
+        overflow: auto;
+        .dailyStats-content-midder {
+          width: 150%;
+          border: 1px solid rgb(238,238,238);
+          .dailyStats-content-table-tr {
+            text-align: center;
+            color: #222;
+            font-size: 12px;
+            background-color: rgb(246,246,246);
+            .dailyStats-content-table-th {
+              width: 100px;
+              min-width: 100px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .dailyStats-content-table-th1 {
+              width: 150px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .dailyStats-content-table-th2 {
+              width: 110px;
+              border: 1px solid rgb(238,238,238);
+            }
+            .dailyStats-content-table-th3 {
+              width: 125px;
+              border: 1px solid rgb(238,238,238);
+              .th-top {
+                width: 125px;
+                height: 31px;
+                line-height: 32px;
+                border: 1px solid rgb(238,238,238);
+              }
+              .th-bottom {
+                height: 45px;
+                .th-bottom1 {
+                  height: 45px;
+                  line-height: 45px;
+                  width: 63px;
+                  float: left;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .th-bottom2 {
+                  line-height: 45px;
+                  width: 62px;
+                  float: right;
+                }
+              }
+            }
+            .dailyStats-content-table-th4 {
+              width: 80px;
+              border: 1px solid rgb(238,238,238);
+            }
+          }
+          .dailyStats-content-table-tr1 {
+            height: 35px;
+            text-align: center;
+            .dailyStats-content-table-tr1-td {
+              border: 1px solid rgb(238,238,238);
+            }
+          }
+          .dailyStats-content-table-tr1:hover {
+            background-color: rgb(239,249,255);
+            cursor: pointer;
+          }
+        }
+      }
+        .dailyStats-content-table::-webkit-scrollbar {/*滚动条整体样式*/
+          width: 6px !important;     /*高宽分别对应横竖滚动条的尺寸*/
+          height: 10px !important;
+          margin: 0 24px !important;
+        }
+        .dailyStats-content-table::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+          border-radius: 10px !important;
+          background: rgb(229,229,229) !important;
+        }
+        .tabs1 {
+         height: 30px;
+         float: right;
+         margin-top: 24px;
+         text-align: right;
+         .but {
+           width: 28px;
+           height: 28px;
+           background-color: #ffffff;
+           border: 0;
+           margin-left: 1px;
+           font-size: 14px;
+           margin-top: -2px;
+         }
+         .but3{
+           width: 28px;
+           height: 28px;
+           background-color: #ffffff;
+           border: none;
+           margin-left: 1px;
+           font-size: 14px;
+         }
+         .butImg {
+           height: 12px;
+           margin-left: -2px;
+         }
+       }
+        .tabBg{
+          width: 28px;
+          height: 28px;
+          background-color: #4898fa !important;
+          border: solid 1px #4898fa;
+          color: #ffffff;
+          border-radius: 3px;
+        }
+      }
+    }
+      //打卡时间样式
+      .showClockTime {
+        max-width: 1400px;
+        overflow: auto;
+        text-align: left;
+        width: calc(100% - 240px);
+        height: 100%;
+        .show-width{
+          min-width: 1200px;
+          .showColumns-top {
+            .attend-select {
+             margin: 24px;
+              .attend-title1 {
+                float: left;
+                width: 50px;
+                text-align: left;
+                font-size: 14px;
+                color: #222222;
+                border-bottom: none;
+                line-height: 34px;
+              }
+              .attend-content-select {
+                font-size: 14px;
+                color: #222222;
+                padding-left: 24px;
+                .attend-content-checkbox{
+                  margin-left: 16px;
+                  .lizhi{
+                    padding-left: 6px;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .line2 {
+          text-align: left;
+          margin:24px;
+          height: 1px;
+          background-color: #ededed;
+        }
+        .clockTime-body {
+          min-width: 1200px;
+          .table-but {
+            width: 105px;
+            height: 32px;
+            background-image: linear-gradient(0deg, #418bfa 0%, #56b1fc 100%);
+            border-radius: 4px;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            margin-bottom: 11px;
+            margin-left: 24px;
+          }
+          .midder-table {
+            margin: 0 24px;
+            .clockTime-table {
+              border: 1px solid rgb(238,238,238);
+              .clockTime-table-tr {
+                text-align: center;
+                color: #222;
+                font-size: 12px;
+                border: 1px solid rgb(238,238,238);
+                .clockTime-table-th {
+                  width: 90px;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .clockTime-table-th1 {
+                  width: 150px;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .clockTime-table-th2 {
+                  width: 105px;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .clockTime-table-th3 {
+                  width: 55px;
+                  border: 1px solid rgb(238,238,238);
+                }
+                .clockTime-table-th4 {
+                  width: 60px;
+                  border: 1px solid rgb(238,238,238);
+                  .th-week {
+                    width: 31px;
+                    height: 15px;
+                    float: left;
+                    font-size: 12px;
+                  }
+                  .th-data {
+                    width: 30px;
+                    height: 15px;
+                    float: right;
+                  }
+                  .th-week1 {
+                    width: 30px;
+                    height: 15px;
+                    float: left;
+                    font-size: 12px;
+                    color: #4cc134;
+                  }
+                  .th-data1 {
+                    width: 30px;
+                    height: 15px;
+                    float: right;
+                    color: #4cc134;
+                  }
+                }
+              }
+              .clockTime-table-tr1 {
+                .clockTime-table-td {
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid rgb(238,238,238);
+                }
+              }
+              .clockTime-table-tr1:hover {
+                background-color: rgb(239,249,255);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .clockTime-body::-webkit-scrollbar {/*滚动条整体样式*/
+          width: 6px !important;     /*高宽分别对应横竖滚动条的尺寸*/
+          height: 10px !important;
+          margin: 0 24px !important;
+        }
+        .clockTime-body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+          border-radius: 10px !important;
+          background: rgb(229,229,229) !important;
+        }
+        .tabs {
+          height: 30px;
+          float: right;
+          margin: 24px 24px 0 0;
+          text-align: right;
+          .but1, .but2, .but3 {
+            width: 28px;
+            height: 28px;
+            background-color: #ffffff;
+            border: none;
+            margin-left: 1px;
+          }
+          .but2 {
+            background-color: #4898fa;
+            border: solid 1px #4898fa;
+            font-size: 14px;
+            color: #ffffff;
+            border-radius: 4px;
+          }
+          .butImg {
+            height: 12px;
+            margin-left: -2px;
+          }
+        }
+      }
+      //原始记录样式
+      .showOriginalRecord {
+        max-width: 1329px;
+        overflow: auto;
+        margin-right: 24px;
+        height: 100%;
+
+        .show-width {
+          min-width: 1200px;
+          .showColumns-top {
+            margin-top: 24px;
+            .attend-select {
+              .attend-title1 {
+                float: left;
+                width: 70px;
+                text-align: right;
+                font-size: 14px;
+                color: #222222;
+                border-bottom: none;
+                line-height: 34px;
+              }
+              .attend-content-select {
+                font-size: 14px;
+                color: #222222;
+                margin-left: 24px;
+                .attend-content-checkbox{
+                  margin-left: 16px;
+                  .lizhi{
+                    padding-left: 6px;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .line3 {
+          margin: 24px 0 24px 24px;
+          height: 1px;
+          background-color: #ededed;
+        }
+        .originalRecord-body {
+          min-width: 1200px;
+          width: calc(100% - 48px);
+          overflow: auto;
+          margin-left: 24px;
+          .table-but {
+            width: 105px;
+            height: 32px;
+            background-image: linear-gradient(0deg, #418bfa 0%, #56b1fc 100%);
+            border-radius: 4px;
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            margin: 0 0 11px 0;
+          }
+          .midder-table {
+            width: 140%;
+            overflow: auto;
+            .particulars {
+              border: 1px solid rgb(238, 238, 238);
+              .particulars-tr {
+                text-align: center;
+                color: #222;
+                font-size: 12px;
+                background-color: rgb(246, 246, 246);
+                .particulars-th {
+                  width: 120px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+                .particulars-th1 {
+                  width: 200px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+                .particulars-th2 {
+                  width: 140px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+                .particulars-th3 {
+                  width: 75px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+                .particulars-th4 {
+                  width: 160px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+                .particulars-th5 {
+                  width: 320px;
+                  font-weight: normal;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+              }
+              .particulars-tr1 {
+                text-align: center;
+                .particulars-th {
+                  padding: 6px;
+                  border: 1px solid rgb(238, 238, 238);
+                }
+              }
+              .particulars-tr1:hover {
+                background-color: rgb(239,249,255);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .originalRecord-body::-webkit-scrollbar {/*滚动条整体样式*/
+          width: 6px !important;     /*高宽分别对应横竖滚动条的尺寸*/
+          height: 10px !important;
+          margin: 0 24px !important;
+        }
+        .originalRecord-body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+          border-radius: 10px !important;
+          background: rgb(229,229,229) !important;
+        }
+        .tabs {
+          width: calc(100% - 288px);
+          height: 30px;
+          float: right;
+          margin: 24px 0 0 0;
+          text-align: right;
+          .but1, .but2, .but3 {
+            width: 28px;
+            height: 28px;
+            background-color: #ffffff;
+            border: none;
+            margin-left: 1px;
+          }
+          .but2 {
+            background-color: #4898fa;
+            border: solid 1px #4898fa;
+            font-size: 14px;
+            color: #ffffff;
+            border-radius: 4px;
+          }
+          .butImg {
+            height: 12px;
+            margin-left: -2px;
+          }
+        }
+      }
+  }
+
+}
+

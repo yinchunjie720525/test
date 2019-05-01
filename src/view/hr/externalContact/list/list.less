@@ -1,0 +1,236 @@
+.clear{
+  clear: both;
+}
+.externalCon{
+  width: 100%;
+  background: #f5f6f7;
+  min-height: 100%;
+  height: 100%;
+
+//table样式
+  .ivu-table-small th {
+    height: 40px !important;
+    background: none;
+  }
+  .ivu-table-row {
+    cursor: pointer;
+  }
+  .ivu-table th {
+    background: #FFFFFF;
+  }
+  .ivu-table-wrapper {
+    border: 0;
+  }
+  .ivu-table:after {
+    background: none;
+  }
+  .ivu-table-small th {
+    height: 40px !important;
+  }
+  .ivu-table-row {
+    cursor: pointer;
+  }
+  .content-eidt{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .content-eidt:hover{
+    color: #56b1fc;
+  }
+
+
+  .tissueChange {
+    .ivu-tree-arrow {
+      width: auto;
+    }
+    .ivu-tree-arrow-open i {
+      transform: rotate(0);
+    }
+    .ivu-icon-ios-arrow-forward {
+      background: url("/image/bothIcon/icon-slide.png") no-repeat;
+      width: 12px;
+      height: 8px;
+      transform: rotate(-90deg);
+      margin-top: -4px;
+      margin-left: 9px;
+    }
+    .ivu-icon-ios-arrow-forward:before {
+      content: '';
+    }
+  }
+  .externalCon-left{
+    width: 240px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    .externalCon-left-search{
+      position: relative;
+      .inp{
+        width: 207px;
+        height: 30px;
+        background-color: #eeeeee;
+        border-radius: 15px;
+        border: none;
+        color: #bfc0c1;
+        margin: 13px 16px;
+        padding-left: 35px;
+      }
+      .img-search{
+        width: 15px;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+      }
+    }
+    .externalCon-left-list{
+      text-align: left;
+    }
+  }
+  .externalCon-right{
+    width: calc(100% - 240px);
+    height: 100%;
+    man-width: 1600px;
+    overflow: auto;
+    .externalCon-right-table{
+      width: 800px;
+      float: left;
+      margin: 20px 24px;
+      text-align: left;
+      padding-bottom: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      .externalCon-right-table-title{
+        height: 54px;
+        font-size: 16px;
+        line-height: 54px;
+        color: #222222;
+        padding-left: 24px;
+      }
+      .externalCon-right-table-handle{
+        margin: 0 24px;
+        height: 40px;
+        background-color: #eceff4;
+        button{
+          cursor: pointer;
+        }
+        .add,.option,.deleted{
+         padding: 0 15px;
+          height: 24px;
+          background: #4898fa;
+          border-radius: 2px;
+          border: solid 1px #418bfa;
+          margin: 8px;
+          font-size: 12px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+        .option{
+          border: solid 1px #bec2c6;
+          color: #333333;
+          background: #fff;
+          margin: 0px;
+        }
+        .deleted{
+          border: solid 1px #f65252;
+          color: #f65252;
+          background: #fff;
+          margin: 0 0 0 8px;
+        }
+      }
+      .externalCon-right-table-content{
+        //height: 205px;
+        margin: 0 24px;
+
+        .department-list-title{
+          border-bottom: 1px solid #ededed;
+          .depart-tree-line{
+            font-weight: bold;
+          }
+        }
+
+        .content-tr{
+          height: 40px;
+          line-height: 40px;
+          .content-thCheck{
+            width: 30px;
+            border-bottom: 1px solid #ededed;
+          }
+          .content-thName{
+            width: 155px;
+            border-bottom: 1px solid #ededed;
+            font-weight: bold;
+            font-size: 14px;
+            color: #222222;
+          }
+          .content-thTel{
+            width: 175px;
+            border-bottom: 1px solid #ededed;
+            font-weight: bold;
+            font-size: 14px;
+            color: #222222;
+          }
+          .content-thCompany{
+            width: 165px;
+            border-bottom: 1px solid #ededed;
+            font-weight: bold;
+            font-size: 14px;
+            color: #222222;
+          }
+          .content-thCharge, .content-thOption{
+            width: 70px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #222222;
+            border-bottom: 1px solid #ededed;
+          }
+          .content-thMold{
+            width: 65px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #222222;
+            border-bottom: 1px solid #ededed;
+          }
+          .content-td{
+            font-size: 14px;
+            color: #222222;
+            border-bottom: 1px solid #ededed;
+          }
+        }
+      }
+    }
+  }
+}
+.externalCon{
+  .ivu-tree ul li{
+    position: relative;
+  }
+  .tissueChange{
+    overflow: hidden;
+    .ivu-tree-arrow{
+       width: 25px;
+       float: left;
+       padding-top: 8px;
+       height: 37px;
+      position: relative;
+      z-index: 2;
+    }
+    .ivu-checkbox-default{
+      margin: 8px;
+      position: relative;
+      z-index: 2;
+    }
+    .ivu-tree-title{
+      padding: 9px 0 9px 70px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    .ivu-tree-title-selected,.ivu-tree-title:hover{
+      background: #56b1fc;
+      color: #fff;
+    }
+  }
+}

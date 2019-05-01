@@ -1,0 +1,248 @@
+.afficheDetail{
+  height: 100%;
+  //头部
+  .allAffiche-top{
+    //返回按钮
+    .allAffiche-top-reverse{
+      width: 15%;
+      .fanHui{
+        width: 68px;
+        height: 32px;
+        background: #fff;
+        border: 1px solid rgba(25,31,37,.12);
+        border-radius: 3px;
+        font-size: 14px;
+        color: #191f25;
+        line-height: 20px;
+        padding: 5px 19px;
+        cursor: pointer;
+        margin: 14px 24px;
+        text-align: center;
+      }
+    }
+    //标题
+    .allAffiche-top-title{
+      width: 60%;
+      font-size: 16px;
+      color: #191f25;
+      line-height: 60px;
+      text-align: center;
+    }
+    //发公告
+    .allAffiche-top-but{
+      width: 25%;
+      .employee-affiche{
+        background: #fff;
+        border: 1px solid rgba(25,31,37,.12);
+        border-radius: 3px;
+        font-size: 14px;
+        color: #191f25;
+        line-height: 20px;
+        padding: 5px 19px;
+        cursor: pointer;
+        margin-top: 14px;
+        text-align: center;
+      }
+      .issue-affiche{
+        border-radius: 3px;
+        font-size: 14px;
+        color: #191f25;
+        line-height: 20px;
+        padding: 6px 19px;
+        cursor: pointer;
+        border: 1px solid rgba(25,31,37,.12);
+        margin: 14px 25px 15px;
+        background: #fff;
+        text-align: center;
+      }
+    }
+    .issue-affiche:hover {
+      background: #3296fa;
+      color: #fff;
+    }
+    .employee-affiche:hover{
+      background: #3296fa;
+      color: #fff;
+    }
+  }
+//公告列表
+.allAffiche-pictures{
+  border-top: 1px solid #ebebeb;
+  background: #f8f8f8;
+  .recentPictures{
+    padding: 6px 20px 6px 30px;
+    font-size: 12px;
+    color: #191f25;
+    letter-spacing: .25px;
+    cursor: pointer;
+  }
+  .historyPictures{
+    margin-right: 13px;
+    color: #3296fa;
+    letter-spacing: .25px;
+    cursor: pointer;
+    padding: 6px 20px 6px 30px;
+  }
+  .allAffiche-pictures-list{
+    text-align: left;
+    background: #FFFFFF;
+    .pictures-list-ul{
+      .pictures-list-li{
+        padding-left: 30px;
+        line-height: 38px;
+        font-size: 12px;
+        color: #191f25;
+        letter-spacing: .25px;
+        border-bottom: 1px solid #eee;
+        .list-li{
+          margin: 13px 30px;
+          cursor: pointer;
+        }
+      }
+      .pictures-list-li:hover{
+        background: #f2f9ff;
+      }
+    }
+  }
+}
+.line{
+  border: 0.5px solid #eee;
+}
+//左边导航
+.newAffiche{
+  width: 150px;
+  height: 100%;
+  border-right: 1px solid #eee;
+  .classify-but{
+    color: #3296fa;
+    font-size: 14px;
+    line-height: 48px;
+    cursor: pointer;
+    text-align: center;
+    .classify-but-img{
+      margin-right: 6px;
+    }
+  }
+  .newAffiche-classify-list{
+    position: relative;
+    .but-all{
+      color: #222;
+      position: relative;
+      .picture{
+        margin-top: 13px;
+        opacity: 0;
+      }
+    }
+    .but-all:hover .picture{
+      opacity: 1;
+    }
+    .classify-img{
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      left: 120px;
+      top: 20px;
+      display: none;
+    }
+    .newAffiche-classify-option{
+      width: 128px;
+      //height: 176px;
+      transition: .4s;
+      -webkit-transition: .4s;
+      background: #ffffff;
+      position: absolute;
+      left: 85px;
+      z-index: 9;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      .option-editor-select-ul{
+        text-align: center;
+        .option-editor-select-ul-li{
+          height: 44px;
+          line-height: 44px;
+          border-bottom: 1px solid #eeeeee;
+          font-size: 16px;
+          color: #4898fa;
+          cursor: pointer;
+        }
+        .option-editor-select-ul-li:hover{
+          background: #eee;
+        }
+      }
+    }
+    .classify-but:hover{
+      background: #eff7ff;
+    }
+  }
+  .newAffiche-classify-list:hover > .classify-img{
+    display: block;
+  }
+  .active{
+    background: #f7f7f7;
+    border-left: 3px solid #3296fa;
+  }
+}
+//表格信息
+.newAffiche-classify-table{
+  width: calc(100% - 150px);
+  margin-bottom: 20px;
+  .classify-table-tr{
+    font-weight: 500;
+    font-size: 13px;
+    transition: background .3s ease;
+    text-align: left;
+    color: rgba(0,0,0,.85);
+    border-bottom: 1px solid #eee;
+    .classify-table-td{
+      width: 15%;
+      .td-title-name{
+        color: #7d8082;
+      }
+      .table-td-count{
+        cursor: pointer;
+        color: #3296fa;
+        margin-top: 6px;
+      }
+      .employ{
+        color: rgb(21,188,131);
+      }
+    }
+    .table-td-color{
+      font-size: 12px;
+      color: #7d8082;
+    }
+    .td-title{
+      width: 50%;
+      padding: 14px;
+      .td-title-midder{
+        font-size: 14px;
+        color: #191f25;
+      }
+      .td-title-name{
+        color: #7d8082;
+        font-size: 12px;
+        margin-top: 6px;
+      }
+    }
+    .td-option{
+      width: 20px;
+      .td-option-span{
+        height: 36px;
+        color: #108ee9;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 14px;
+        margin-top: -5px;
+      }
+    }
+  }
+  .tr-bg{
+    background: #f7f7f7;
+  }
+}
+.newPage{
+  text-align: right;
+  padding-right: 20px;
+}
+}

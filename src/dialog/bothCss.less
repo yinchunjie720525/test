@@ -1,0 +1,251 @@
+//右侧导航
+.dialog-right-div {
+  text-align: left;
+  color: #222222;
+  .dialog-both-box {
+    position: relative;
+    height: 100%;
+  }
+  .dialog-both-box-tip {
+    height: 40px;
+    background-color: #f65252;
+    border-radius: 2px;
+    margin: 14px 22px 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    transition: 1.5s;
+    position: absolute;
+    width: calc(100% - 44px);
+    transform: translateY(0);
+  }
+  .dialog-both-box-tip-hide {
+    transform: translateY(-800px);
+    visibility: hidden;
+  }
+  .ivu-drawer-body {
+    padding: 0;
+  }
+  .dialog-both-body {
+    width: 100%;
+    height: calc(100% - 120px);
+    overflow: auto;
+    transition: 1s;
+  }
+  .dialog-both-title {
+    height: 64px;
+    padding: 0 22px;
+    background-color: #ffffff;
+    width: 100%;
+    line-height: 64px;
+    font-size: 18px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .dialog-both-message {
+    height: 40px;
+    background-color: #e7eaef;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 22px;
+    margin: 13px 22px 24px;
+  }
+  .dialog-both-li {
+    margin: 0 22px 24px 22px;
+    .imgIcon {
+      width: 6px;
+      height: 7px;
+      margin: -2px 5px 0 0;
+    }
+    .dialog-both-li-money{
+      color: #ef4944;
+      font-weight: bold;
+      line-height: 32px;
+    }
+    .dialog-both-li-money-input{
+      border: 0;
+      height: 32px;
+      line-height:32px;
+      color: #ef4944;
+      font-weight: bold;
+      padding: 0 0 0 5px;
+    }
+    .dialog-both-li-left {
+      line-height: 34px;
+      font-size: 14px;
+      width: 120px;
+      text-align: right !important;
+      span {
+        width: calc(100% - 6px);
+      }
+    }
+    .dialog-both-li-input {
+      width: 279px;
+      height: 34px;
+      border-radius: 4px;
+      border: solid 1px #bec2c6;
+      line-height: 32px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+    .dialog-both-li-input-upload{
+      .ivu-upload-list{
+        margin-top: 0;
+      }
+      color: #3296fa;
+      height: auto;
+      //padding: 0;
+      cursor: pointer;
+      font-size: 16px;
+      .ivu-upload-drag{
+        border: 0;
+        border-radius: 0;
+        height: 100%;
+        text-align: left;
+      }
+      img{
+        margin-right: 5px;
+      }
+    }
+    .dialog-contract-div{
+      border: 0;
+      height: auto;
+      padding: 0;
+      position: relative;
+      .dialog-contract-photo:hover{
+        .dialog-contract-photo-tip{
+          transform: translateY(0);
+        }
+      }
+      .dialog-contract-photo{
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        .dialog-contract-photo-tip{
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba(0,0,0,.6);
+          text-align: center;
+          transform: translateY(-200px);
+          transition: .4s;
+          .dialog-contract-photo-show,.dialog-contract-photo-down{
+            a{
+              color: #ffffff;
+            }
+            padding: 0 12px;
+            height: 24px;
+            cursor: pointer;
+            line-height: 24px;
+            background-color: #56b0fc;
+            border-radius: 12px;
+            display: inline-block;
+            color: #ffffff;
+            margin: 23px 0 12px 0;
+          }
+          .dialog-contract-photo-down{
+            margin: 0 0 14px 0;
+          }
+          .dialog-contract-photo-del{
+            color: #ef4944;
+            cursor: pointer;
+            text-align: center;
+            line-height: 12px;
+            height: 12px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .dialog-contract-photo-img{
+        width: 132px;
+        height: 132px;
+      }
+    }
+    .dialog-both-li-input-date{
+      .ivu-input{
+        border: 0;
+        height: 28px;
+        color: #222222;
+        top: -1px;
+        font-size: 14px;
+      }
+      .ivu-date-picker-focused input{
+        box-shadow:none;
+      }
+      .ivu-icon{
+        display: none;
+      }
+      .ivu-input:focus{
+        box-shadow:none;
+      }
+    }
+    .dialog-both-li-input-div{
+      padding: 0;
+      height: auto;
+      .ivu-tag-checked{
+        display: inline-block;
+        padding: 0 15px;
+        background-color: #f9e0b7;
+        border-radius: 2px;
+        font-size: 12px;
+        //margin: 4px 0 5px 16px ;
+        line-height: 24px;
+        .ivu-tag-text{
+          color: #ce7e30;
+        }
+      }
+    }
+    .ivu-select {
+      width: 279px;
+      .company-li {
+        padding: 0 16px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 2px;
+        background: #e61849;
+        .company-li-img {
+          width: 16px;
+          height: 16px;
+          margin: -2px 4px 0 0;
+        }
+        .company-li-name {
+          color: #ffffff;
+          font-size: 12px;
+
+        }
+      }
+      .ivu-select-input {
+        height: 34px;
+        line-height: 34px;
+
+      }
+    }
+  }
+  .dialog-both-active-btn {
+    height: 56px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    .saveButton, .cancelButton {
+      width: 80px;
+      transition: .4s;
+      opacity: .8;
+      height: 32px;
+      background-image: linear-gradient(0deg, #418bfa 0%, #56b1fc 100%);
+      border-radius: 4px;
+      margin: 12px 8px 0;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    .saveButton:hover, .cancelButton:hover {
+      opacity: 1;
+    }
+    .cancelButton {
+      background: #fff;
+      color: #222222;
+      border: solid 1px #eee;
+      margin-left: 8px;
+    }
+  }
+}

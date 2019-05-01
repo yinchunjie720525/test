@@ -1,0 +1,497 @@
+.personal-manage {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  background: #f5f6f7;
+  min-width: 1400px;
+  .ivu-table-small th {
+    height: 40px !important;
+    background: none;
+  }
+  .ivu-table-row {
+    cursor: pointer;
+  }
+  .ivu-tree ul li {
+    margin: 0;
+  }
+}
+
+/*左边目录样式*/
+.managingPeople-left {
+  width: 302px;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #e7eaef;
+  background: #fff;
+  /*左边目录导航*/
+  .managingPeople-nav {
+    width: 90%;
+    height: 36px;
+    overflow: hidden;
+    margin: 14px auto;
+    background-color: #e7eaef;
+    .managingPeople-nav-ul {
+      list-style: none;
+      border-radius: 4px;
+      .managingPeople-nav-li {
+        float: left;
+        width: 90px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 36px;
+        font-size: 16px;
+        color: #222;
+      }
+      .active {
+        width: 90px;
+        height: 36px;
+        color: #fff;
+        background-color: #56b1fc;
+      }
+    }
+  }
+  /*组织结构&角色&等级*/
+  .tissueChange, .rolesChange, .gradeChange {
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  /*新增角色组&新增角色按钮*/
+  .dialog-newRoles-btnOperate {
+    //width: 240px;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    .butRoles1, .butRoles2 {
+      width: 93px;
+      height: 24px;
+      border-radius: 2px;
+      border: solid 1px #bec2c6;
+      background: #fff;
+      cursor: pointer;
+    }
+    .butRoles1 {
+      margin: 10px 8px 10px 0;
+    }
+  }
+  /*新增等级组&编辑等级组按钮*/
+  .gradeOptions {
+    //width: 240px;
+    height: 48px;
+    text-align: center;
+    margin: 0 auto;
+    .addGradeOptions, .editorGradeOptions {
+      width: 93px;
+      height: 24px;
+      border-radius: 2px;
+      border: solid 1px #bec2c6;
+      font-size: 14px;
+      color: #666666;
+      background: #fff;
+      cursor: pointer;
+    }
+    .addGradeOptions {
+      margin: 10px 8px 10px 0;
+    }
+  }
+  /*等级列表*/
+  .grade-body {
+    width: 100%;
+    .grade-body-ul {
+      text-align: left;
+      list-style: none;
+      .grade-body-li {
+        height: 36px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #222222;
+        line-height: 36px;
+        .grade-body-li-img {
+          margin: 7px 2px 7px 6px;
+          height: 22px;
+          vertical-align: top;
+        }
+      }
+      .grade-body-li-active,.grade-body-li:hover{
+        background: #56b1fc;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*组织结构右边部分样式*/
+.managingPeople-right {
+  //width: auto;
+  height: 100%;
+  width: calc(100% - 302px);
+  float: left;
+  text-align: left;
+  background: #f5f6f7;
+  /*组织结构右边头部部分*/
+  .managingPeople-right-top {
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e4e4e4;
+    /*标题*/
+    .title {
+      font-size: 16px;
+      color: #222;
+      font-weight: bold;
+      line-height: 54px;
+      padding-left: 24px;
+    }
+    /*分类（集团群）*/
+    .groups {
+      width: 44px;
+      height: 18px;
+      display: inline-block;
+      background-color: #f7cb27;
+      border-radius: 2px;
+      margin: 18px 10px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+    }
+    /*编辑按钮*/
+    .editorBtn {
+      width: 74px;
+      height: 24px;
+      border-radius: 2px;
+      border: solid 1px #bec2c6;
+      font-size: 12px;
+      color: #666;
+      background: #fff;
+      cursor: pointer;
+    }
+    /*链接（三人禾集团 > 高端营销 > 开发部）*/
+    .chaining {
+      margin-left: 26px;
+      .chaining-a {
+        font-size: 12px;
+        color: #555;
+      }
+      .chaining-a:nth-child(3) {
+        color: #56b1fc;
+      }
+      .chainingImg {
+        height: 10px;
+        padding: 0 3px;
+        margin-top: -3px;
+      }
+    }
+  }
+  /*部门人员管理*/
+  .managingPeopleGenre {
+    width: 240px;
+    height: calc(100% - 56px);
+    background: #fff;
+    float: left;
+    /*添加子部门&调整排序按钮*/
+    .addSubDivisions, .adjust {
+      width: 93px;
+      height: 24px;
+      border-radius: 2px;
+      border: solid 1px #bec2c6;
+      background: #fff;
+      cursor: pointer;
+    }
+    .addSubDivisions {
+      margin: 12px 8px 12px 22px;
+    }
+    /*调整部门位置*/
+    .moveLocation {
+      background-color: #e7c781;
+      padding: 0 0 0 24px;
+      font-size: 12px;
+      color: #222;
+      height: 0;
+      overflow: hidden;
+      transition: .4s;
+      //.save, .revoke{
+      //  color: #56b1fc;
+      //}
+      span{
+        cursor: pointer;
+      }
+      span:hover{
+        color: #56b0fc;
+      }
+      .save {
+        padding: 12px;
+      }
+    }
+    .moveLocation_show{
+      height: 36px;
+      padding: 9px 0 9px 24px;
+    }
+    /*部门列表*/
+    .menu-ul {
+      list-style: none;
+      .menu-li {
+        height: 36px;
+        padding: 8px 10px 25px;
+        border-bottom: 1px solid #e7eaef;
+        font-size: 14px;
+        color: #222;
+        cursor: pointer;
+      }
+      .menu-li:hover ,.menu-li-active{
+        background-color: #e7eaef;
+      }
+      .menuImg {
+        height: 16px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .managingPeopleGenre-tab {
+    float: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 24px;
+    overflow: hidden;
+    .ivu-table th {
+      background: #FFFFFF;
+    }
+    .ivu-table-wrapper {
+      border: 0;
+    }
+    .ivu-table:after {
+      background: none;
+    }
+    .ivu-table-small th {
+      height: 40px !important;
+    }
+    .ivu-table-row {
+      cursor: pointer;
+    }
+    .managingPeopleGenre-title {
+      width: 730px;
+      height: 28px;
+      text-align: left;
+      font-size: 18px;
+      color: #222222;
+      margin: 12px auto 5px 2px;
+      padding-left: 24px;
+    }
+    .managingPeopleGenre-btn {
+      width: 680px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #eceff4;
+      .addMembers {
+        background-color: #4898fa;
+        border: solid 1px #418bfa;
+        color: #fff;
+        margin-left: 24px;
+      }
+      .addMembers, .batchRemove {
+        width: 80px;
+        height: 24px;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 2px;
+        border: solid 1px #bec2c6;
+        margin: 8px 0 8px 10px;
+        font-size: 12px;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.activeHover {
+  cursor: pointer;;
+}
+
+.activeHover:hover {
+  color: #4898fa;
+}
+
+.ivu-checkbox-inner {
+  width: 13px !important;
+}
+
+.ivu-table:after {
+  background: none !important;
+}
+
+/*角色右边部分样式*/
+.roles-right {
+  float: left;
+  width: calc(100% - 304px);
+  height: 100%;
+  background: #f5f6f7;
+  .roles-right-nav {
+    height: 54px;
+    text-align: left;
+    background-color: #ffffff;
+    .subAdmin {
+      padding-left: 24px;
+      line-height: 54px;
+      font-size: 16px;
+      color: #222222;
+      font-weight: bold;
+    }
+    .roles-editor {
+      width: 74px;
+      height: 24px;
+      border-radius: 2px;
+      border: solid 1px #bec2c6;
+      margin-left: 24px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+  .roles-right-body {
+    width: 780px;
+    height: 317px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 24px;
+    overflow: hidden;
+    .roles-right-body-title {
+      width: 730px;
+      height: 28px;
+      text-align: left;
+      font-size: 18px;
+      color: #222222;
+      margin: 12px auto 5px;
+    }
+    .roles-right-body-btn {
+      width: 730px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #eceff4;
+      .addMembers, .batchRemove {
+        width: 80px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 2px;
+        border: solid 1px #bec2c6;
+        margin: 8px 10px 8px 0;
+        font-size: 12px;
+        color: #333333;
+        cursor: pointer;
+      }
+      .addMembers {
+        background-color: #4898fa;
+        border: solid 1px #418bfa;
+        color: #fff;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+/*等级右边部分样式*/
+.staffGrade-right {
+  width: calc(100% - 302px);
+  float: left;
+  height: 100%;
+  background-color: #f5f6f7;
+  border-radius: 8px;
+  //margin: 18px auto 34px 29px;
+  .staffGrade-right-div {
+    margin: 24px;
+    width: 780px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    .staffGrade-title {
+      height: 54px;
+      text-align: left;
+      border-radius: 8px 8px 0px 0px;
+      .staffGrade-title-p {
+        line-height: 54px;
+        .staffGrade, .hierarchy {
+          padding-left: 24px;
+          cursor: pointer;
+          font-size: 16px;
+          color: #222222;
+        }
+        .staffGrade-active {
+          color: #4898fa;
+          font-weight: bold;
+        }
+      }
+    }
+    .staffGrade-option, .hierarchy-option {
+      width: 730px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #eceff4;
+
+      .setGrade, .addStaff, .delGrade, .editorStaff {
+        width: 80px;
+        height: 24px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: solid 1px #bec2c6;
+        margin: 8px 0 8px 10px;
+        font-size: 12px;
+        color: #222222;
+        cursor: pointer;
+      }
+      .setGrade {
+        background-color: #4898fa;
+        color: #ffffff;
+      }
+      .delGrade {
+        border: solid 1px #f65252;
+        color: #f65252;
+      }
+      .editorStaff {
+        width: 159px;
+      }
+    }
+    .ivu-table th {
+      background: #FFFFFF !important;
+    }
+  }
+}
+
+.tissueChange {
+  .ivu-tree-children:after{
+    clear:both;
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
+  .tree-class{
+    padding: 7px 0;
+    width: calc(100% - 25px);
+    cursor: pointer;
+    display:inline-block;
+    transition: .4s;
+  }
+  .tree-class2,.tree-class:hover{
+    background: #56b1fc;
+    color: #FFF;
+  }
+  .ivu-tree-arrow {
+    width: 25px;
+    float: left;
+    padding-top: 8px;
+    height: 37px;
+  }
+  .ivu-tree-arrow-open i {
+    transform: rotate(0);
+  }
+  .ivu-icon-ios-arrow-forward {
+    background: url("/image/peopleMan/icon-san1.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    transform: rotate(-90deg);
+    //margin-top: -4px;
+  }
+  .ivu-icon-ios-arrow-forward:before {
+    content: '';
+  }
+}

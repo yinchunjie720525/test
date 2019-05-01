@@ -1,0 +1,294 @@
+//排班页面样式
+.arrange{
+  //width: calc(100% - 240px);
+  height: 100%;
+  overflow: auto;
+  min-width: 60%;
+  .arrange-content{
+    padding: 24px;
+    .arrange-content-title{
+      text-align: left;
+      .arrange-content-title-manage{
+        background-color: #fff;
+        border: 0;
+        margin-right: 5px;
+        color: #999999;
+      }
+      .arrange-content-title-rear{
+        background-color: #fff;
+        border: 0;
+        margin-left: 5px;
+      }
+    }
+    .line{
+      width: cale(100% - 240px);
+      border: 1px solid #999999;
+      margin: 15px 0;
+    }
+    .explain{
+      margin: 6px 0;
+      .explain-sub{
+        color: #222;
+        font-size: 14px;
+      }
+      .explain-show-shi{
+        background-color: rgb(94,144,255);
+        border: 0;
+        margin-right: 13px;
+        border-radius: 3px;
+        width: 115px;
+        height: 23px;
+        color: #fff;
+      }
+      .explain-show-shi:hover{
+        opacity: .8;
+      }
+      .explain-show-mo{
+        background-color: rgb(251,99,112);
+        border: 0;
+        margin-right: 13px;
+        border-radius: 3px;
+        width: 140px;
+        height: 23px;
+        color: #fff;
+      }
+      .explain-show-mo:hover{
+        opacity: .8;
+      }
+      .explain-show-xiu{
+        background-color: rgb(243,243,243);
+        border: 1px solid rgb(233,233,233);
+        margin-right: 13px;
+        border-radius: 3px;
+        width: 63px;
+        height: 23px;
+        color: #222;
+      }
+      .explain-show-xiu:hover{
+        opacity: .8;
+      }
+      .explain-show-dao{
+        background-color: rgb(94,144,255);
+        border: 0;
+        margin-right: 13px;
+        border-radius: 3px;
+        width: 135px;
+        height: 23px;
+        color: #fff;
+      }
+      .explain-show-dao:hover{
+        opacity: .8;
+      }
+      .explain-show-set{
+        color: rgb(104,193,255);
+        background-color: #fff;
+        border: 0;
+        font-size: 14px;
+        margin-left: 30px;
+      }
+    }
+    .explain-data{
+      margin-top: 20px;
+      text-align: left;
+      .explain-data-xuan{
+        margin-right: 17px;
+      }
+      .explain-data-duo{
+        margin-top: 2px;
+        .explain-data-duo-img{
+          width: 12px;
+          margin-left: 3px;
+          margin-top: -2px;
+        }
+      }
+      .explain-data-excel{
+        .explain-data-excel-title{
+          font-size: 14px;
+          color: #222;
+        }
+        .explain-data-excel-first{
+          background-color: rgb(94,144,255);
+          border: 0;
+          margin-right: 10px;
+          border-radius: 3px;
+          width: 145px;
+          height: 23px;
+          color: #fff;
+        }
+        .explain-data-excel-first:hover{
+          opacity: .8;
+        }
+        .explain-data-excel-second{
+          background-color: rgb(94,144,255);
+          border: 0;
+          margin-left: 10px;
+          border-radius: 3px;
+          width: 145px;
+          height: 23px;
+          color: #fff;
+        }
+        .explain-data-excel-second:hover{
+          opacity: .8;
+        }
+      }
+    }
+    //表格样式
+    .midder-table {
+      margin: 24px 0;
+      .clockTime-table {
+        border: 1px solid #bec2c6;
+        .clockTime-table-tr {
+          height: 30px;
+          text-align: center;
+          color: #222;
+          font-size: 12px;
+          .clockTime-table-th {
+            width: 77px;
+            border: 1px solid #bec2c6;
+          }
+          .clockTime-table-th4 {
+            width: 40px;
+            border: 1px solid #bec2c6;
+            .th-week {
+              width: 20px;
+              height: 20px;
+              font-size: 12px;
+              padding-left: 13px;
+            }
+            .th-data {
+              width: 20px;
+              height: 20px;
+              padding:  3px 13px;
+            }
+            .th-week1 {
+              width: 20px;
+              height: 20px;
+              font-size: 12px;
+              color: red;
+              padding-left: 13px;
+            }
+            .th-data1 {
+              width: 20px;
+              height: 20px;
+              color: red;
+              padding:  3px 13px;
+            }
+          }
+        }
+        .clockTime-table-tr1 {
+          height: 30px;
+          border: 1px solid #bec2c6;
+          .clockTime-table-td {
+            text-align: center;
+            color: #fff;
+            background-color: rgb(93,133,251);
+            border: 1px solid #bec2c6;
+          }
+        }
+        .clockTime-table-tr2 {
+          height: 30px;
+          border: 1px solid #bec2c6;
+          .clockTime-table-td {
+            text-align: center;
+            color: #fff;
+            background-color: rgb(251,99,112);
+            border: 1px solid #bec2c6;
+          }
+        }
+        .clockTime-table-tr3 {
+          height: 30px;
+          border: 1px solid #bec2c6;
+          .clockTime-table-td {
+            text-align: center;
+            color: #222;
+            background-color: rgb(243,243,243);
+            border: 1px solid #bec2c6;
+          }
+        }
+      }
+    }
+    .arrange-tab {
+      width: calc(100% - 288px);
+      height: 30px;
+      float: right;
+      text-align: right;
+      .but1, .but2, .but3 {
+        width: 28px;
+        height: 28px;
+        background-color: #ffffff;
+        border: none;
+        margin-left: 1px;
+      }
+      .but2 {
+        background-color: #4898fa;
+        border: solid 1px #4898fa;
+        font-size: 14px;
+        color: #ffffff;
+        border-radius: 4px;
+      }
+      .butImg {
+        height: 12px;
+        margin-left: -2px;
+      }
+    }
+    .count-table {
+      max-width: 1329px;
+      overflow: auto;
+      margin: 50px 0 0;
+      .count-table {
+        border: 1px solid #bec2c6;
+        .count-table-tr {
+          height: 30px;
+          text-align: center;
+          color: #222;
+          font-size: 12px;
+          .count-table-th {
+            width: 77px;
+            border: 1px solid #bec2c6;
+          }
+          .count-table-th4 {
+            width: 40px;
+            border: 1px solid #bec2c6;
+          }
+          .count-table-td {
+            width: 40px;
+            text-align: center;
+            color: #222;
+            border: 1px solid #bec2c6;
+          }
+          .count-table-td1{
+            border: 1px solid #bec2c6;
+            .count-table-td1-p{
+              width: 35px;
+              color: #fff;
+              margin-left: 20px;
+              border-radius: 4px;
+              background-color: rgb(93,133,251);
+            }
+          }
+          .count-table-td2{
+            border: 1px solid #bec2c6;
+            .count-table-td2-p{
+              width: 60px;
+              color: #fff;
+              margin-left: 10px;
+              border-radius: 4px;
+              background-color: rgb(251,99,112);
+            }
+          }
+          .count-table-td3{
+            border: 1px solid #bec2c6;
+            .count-table-td3-p{
+              width: 30px;
+              color: #222;
+              margin-left: 22px;
+              border-radius: 4px;
+              background-color: rgb(243,243,243);
+              border: 1px solid rgb(233,233,233);
+            }
+          }
+        }
+      }
+    }
+  }
+}
